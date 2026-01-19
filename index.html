@@ -58,6 +58,14 @@
         .music-link:active {
             transform: translateY(0);
         }
+        .video-container {
+            animation: fadeIn 1.5s ease-out 0.3s both;
+        }
+        .video-container video {
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
         .sparkle {
             position: fixed;
             width: 10px;
@@ -85,6 +93,11 @@
 <body>
     <div class="container">
         <h1>Rochelle Vibe Coding Kulas</h1>
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="music-player">
         <a href="https://youtu.be/ydFYm-oomec?si=X_6eXIvXgIBqkE4f" target="_blank" class="music-link">
